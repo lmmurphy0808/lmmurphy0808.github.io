@@ -1,0 +1,159 @@
+<!--Lauren Murphy CSCE 242: Web Applications-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cookies!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #FFFFF0;
+            background-image: url('images/cookie-background.jpg');
+            background-size: cover;
+            background attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFE4B5;
+        }
+
+        h2 {
+            text-align: center;
+            color: #8B4513;
+        }
+
+        p {
+            line-height: 1.5;
+            margin: 15px;
+            color: #8B4513;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .container img {
+            width: 100%;
+            border: 2px solid #8B4513;
+            border-radius: 10px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #8B4513;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #A0522D;
+            color: white;
+        }
+
+        /* ID styling */
+        #table3x5 {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            color: #8B4513;
+        }
+
+        #table3x5 th,
+        #table3x5 td {
+            border: 2px solid #8B4513;
+            padding: 10px;
+            text-align: center;
+            background-color: #FAF0E6;
+        }
+
+        #table3x5 th {
+            background-color: #8B4513;
+            color: white;
+        }
+    </style>
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Pictures</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        
+        <!--Main-->
+        <h1>Welcome to the Cookie Series!!</h1>
+        <h2>By: Lauren Murphy</h2>
+
+        <div class="container">
+            <img src="images/cookie.jpg" alt="Individual Cookie">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec sapien eget urna lacinia porta vitae ut sem. Ut tincidunt erat libero, eget aliquam metus ornare vel. Fusce dolor odio, maximus at nulla nec, dignissim egestas dui. Vestibulum ut auctor sapien. Nam et turpis libero. Donec ut libero euismod, auctor dui ornare, blandit est. Sed ullamcorper quam vel velit scelerisque imperdiet. Vivamus tincidunt a est nec vestibulum. Duis mollis malesuada erat eget ornare. Integer sed turpis nec purus ultrices sollicitudin rutrum vitae erat. Curabitur consectetur cursus nisl non rutrum. Vestibulum egestas venenatis ex sed pellentesque. Praesent in nibh at nulla euismod sagittis quis gravida eros. Phasellus a neque et nisl hendrerit sodales eu quis metus. Vivamus faucibus vehicula neque et imperdiet. Praesent vitae enim nec neque ullamcorper pharetra.
+            </p>
+        </div>
+
+        <div class="container">
+            <img src="images/chocolate-chip-cookie-recipe.jpg" alt="Multiple Cookies">
+            <p>
+                Maecenas maximus pulvinar risus eget venenatis. Donec iaculis volutpat tellus vitae tempor. Integer a augue et justo ullamcorper scelerisque aliquam in lectus. Praesent diam elit, iaculis vel gravida sed, laoreet non urna. Vivamus massa mi, lacinia in massa eu, volutpat tempor felis. Maecenas at arcu tellus. Proin sapien enim, gravida ac dolor id, maximus tincidunt nisi. Curabitur quis massa ut augue pharetra fringilla. Fusce sodales, ante eget ultricies consequat, mauris lacus rutrum ipsum, vitae suscipit diam massa nec dui.
+            </p>
+        </div>
+
+        <!--Table 3x5-->
+        <table id="table3x5">
+            <thead>
+                <tr>
+                    <th>Cookie Type</th>
+                    <th>Dietary Restrictions?</th>
+                    <th>Cooking Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chocolate Chip</td>
+                    <td>Gluten Free</td>
+                    <td>14 minutes</td>
+                </tr>
+                <tr>
+                    <td>Oatmeal Chocolate Chip</td>
+                    <td>Not Applicable</td>
+                    <td>16 minutes</td>
+                </tr>
+                <tr>
+                    <td>Snickerdoodle</td>
+                    <td>Dairy Free</td>
+                    <td>18 minutes</td>
+                </tr>
+                <tr>
+                    <td>Peanut Butter Blossom</td>
+                    <td>Not Applicable</td>
+                    <td>14 minutes</td>
+                </tr>
+                <tr>
+                    <td>Lemon Poppyseed</td>
+                    <td>Gluten, Dairy Free</td>
+                    <td>13 minutes</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
