@@ -57,6 +57,8 @@ body {
     align-items: center;
 }
 
+
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +135,10 @@ body {
     .col1of3, 
     .col2of3 {
         flex: 1;
+    }
+
+    .flex-container col1 {
+        flex: 8;
     }
 
 }
