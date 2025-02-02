@@ -57,14 +57,11 @@ body {
     align-items: center;
 }
 
-
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 
 .flex-container h4 {
     text-align: center;
@@ -104,8 +101,6 @@ body {
     list-style-type: none;
 }
 
-
-
 /* Main Navigation */
 #main-nav ul {
     padding-left: 0;
@@ -135,10 +130,6 @@ body {
     .col1of3, 
     .col2of3 {
         flex: 1;
-    }
-
-    .flex-container col1 {
-        flex: 8;
     }
 
 }
