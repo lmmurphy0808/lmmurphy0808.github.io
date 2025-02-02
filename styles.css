@@ -23,6 +23,15 @@
     text-align: center;
 }
 
+.col1of3 a {
+    
+    color:white;
+}
+
+.col1of3 li {
+    list-style: none;
+}
+
 /*Larger Resolutions*/
 @media (min-width: 900px) {
     .flex-container {
