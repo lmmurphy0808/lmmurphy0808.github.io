@@ -1,140 +1,302 @@
-/* Structure */
 body {
     background: white;
     font-family: 'Times New Roman', Times, serif;
-    margin: 0; 
+    margin: 0;
 }
 
-#everything {
-    background: white;
-    width: 80%;
-    border-radius: 5px;
-}
-
-header, h2 {
-    background: black;
+header {
+    background-color: black;
     color: white;
-    position: relative;
-    padding-top: 80px;
-    margin: 0; 
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h2 {
-    background: maroon;
-}
-
-.img1 {
-    margin-top:20px;
-    padding:5px;
-    text-align:center;
-    position:relative;
-}
-
-.img-content {
-    position: absolute;
-}
-
-.img-content h3 {
-    position:absolute;
-    padding:10px;
-    bottom:0;
-    background:green;
-    color:maroon;
-}
-
-.img-content p {
-    position:absolute;
-    padding:10px;
-    text-align:center;
-    background:green;
-    color:black;
-}
-
-.navbar {
-    list-style-type:none;
-    padding-left:250px;
-    padding-right:50px;
-    width:200px;
-    font-weight:bold;
-}
-
-.columns a {
-    text-decoration:none;
-    color:black;
-    display:block;
-}
-
-.columns li {
-    margin-bottom:5px;
-}
-
-.node {
-    text-align:center;
-    padding:5px;
-}
-
-footer {
-    background: maroon;
-    color: white;
-}
-
-/* Navigation */
 #main-logo {
-    position: absolute;
-    left: 10%;
-    padding-right: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+#main-logo h1 {
+    margin: 0;
+}
+
+#main-logo h2 {
+    margin: 0;
+    background-color: maroon;
+    padding: 10px 0;
+    width: 100%;
 }
 
 #sub-nav {
     position: absolute;
     top: 0;
-    right: 5px;
+    right: 0;
+    padding: 10px;
 }
 
 #sub-nav ul {
-    padding-left: 0;
-}
-
-#sub-nav li {
+    display: flex;
     list-style-type: none;
-    text-align: center;
-    margin: 0 5px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
-#sub-nav a {
+#sub-nav ul li {
+    margin-right: 20px;
+}
+
+#sub-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    list-style-type: none;
+}
+
+.large-image-container {
+    width: 100%;
+    position: relative;
+    height: 60vh;
+}
+
+.large-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    width: 50%;
+    max-width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.maroon-header {
+    color: maroon;
+    padding: 10px;
+    text-align: center;
+}
+
+.black-paragraph {
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.news-section {
+    padding: 20px;
+}
+
+.news-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: maroon;
+}
+
+.news-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: maroon;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+.news-item {
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.news-content h4 {
+    font-size: 20px;
+    color: maroon;
+    margin: 0;
+}
+
+.news-content p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.news-content a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: maroon;
+    text-decoration: none;
+}
+
+.footer-gray {
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-right ul li {
+    margin-right: 20px;
+}
+
+.footer-right ul li a {
     color: white;
     text-decoration: none;
 }
 
-/* Typography */
+.footer-maroon {
+    background-color: maroon;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
 
+.footer-column {
+    width: 30%;
+}
 
-/* Larger Screens */
-@media only screen and (min-width: 768px) {
-    .columns {
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-black {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+@media (min-width: 900px) {
+    header {
+        flex-direction: row;
+    }
+
+    #sub-nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #sub-nav ul li {
+        margin-right: 20px;
+    }
+
+    #content {
         display: flex;
+        flex-direction: row;
+        width: 75%;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
     }
 
-    #main-nav li {
-        flex: 1;
+    .side-nav {
+        width: 25%;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
-    #main-nav li:not(:last-child) {
-        border-right: 1px solid white;
+    .flex-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+        width: 75%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 899px) {
+    header {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .gallery {
-        flex-wrap:wrap;
-        justify-content: space-between;
+    #sub-nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .node {
-        flex-basis:30;
+    #sub-nav ul li {
+        margin-bottom: 10px;
     }
 
-    .idea-img p {
-        position:absolute;
-        padding:5px;
-        bottom:0;
+    #content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+    }
+
+    .side-nav {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .flex-container {
+        display: block;
+        padding: 10px;
+    }
+
+    .tile {
+        margin-bottom: 20px;
     }
 }
