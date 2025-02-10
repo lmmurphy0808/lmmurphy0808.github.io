@@ -1,0 +1,83 @@
+body {
+    background-color: #f6e8fa;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #c59fd1;
+}
+
+h2 {
+    text-align: center;
+    color: #c59fd1;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.container {
+    flex: 1;
+    min-width: 200px; 
+    text-align: center;
+    background-color: #f8f0fc;
+    color: lightslategray;
+    border: solid lightgray;
+}
+
+/* Hello Button */
+button {
+    padding: 10px 20px;
+    background-color: #c59fd1;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Star Color Selector */
+.star {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="color"] {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+footer {
+    font-family: sans-serif;
+    color: lightslategray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Large Resolution */
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .container {
+        margin-bottom: 20px; 
+    }
+}

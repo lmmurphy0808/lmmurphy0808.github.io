@@ -1,0 +1,140 @@
+/* downloaded font applied to all content */
+body {
+    font-family: 'Playfair Display';
+}
+
+/* header and navbar */
+.main-header {
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.main-header a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.column {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: row;
+    flex: 60%;
+    width: 400px;
+    background-color: #f0f0f0;
+}
+
+.right-column {
+    flex: 35%;
+    width: 200px;
+    background-color: #d0d0d0;
+}
+
+.left-content {
+    flex: 1;
+    padding-right: 10px;
+    font-size: 28px;
+    align-content: center;
+    text-align: center;
+}
+
+.right-content {
+    flex-shrink: 0;
+}
+
+.right-content img {
+    flex: 1;
+    width: 100;
+    max-width: 200px;
+    display: block;
+}
+
+.right-column .top-section,
+.right-column .middle-section,
+.right-column .bottom-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px; /* Space between the sections */
+}
+
+.right-column .top-section img,
+.right-column .middle-section img,
+.right-column .bottom-section img {
+    margin-left: 35%; /* Space between image and text */
+    width: 120px; /* Size of the image */
+    height: 110px; /* Size of the image */
+}
+
+.right-column .top-section .text-container,
+.right-column .middle-section .text-container,
+.right-column .bottom-section .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align text to the left inside the container */
+    margin-left: 5%; /* Move text to the right */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-column .top-section li,
+.right-column .middle-section li,
+.right-column .bottom-section li {
+    list-style-type: none;
+}
+
+.right-column .top-section li a,
+.right-column .middle-section li a,
+.right-column .bottom-section li a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex: 100%;
+    }
+
+    .navbar {
+        flex: 100%;
+    }
+}
