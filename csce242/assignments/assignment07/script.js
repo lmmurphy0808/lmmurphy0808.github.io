@@ -17,9 +17,6 @@ colorSelector.addEventListener('input', (event) => {
     star.style.backgroundColor = event.target.value;
 });
 
-
-
-// Function to generate random colors
 function getRandomColor() {
     const randomColor = Math.floor(Math.random()*16777215).toString(16);  // Generates a random color in hex format
     return randomColor;
