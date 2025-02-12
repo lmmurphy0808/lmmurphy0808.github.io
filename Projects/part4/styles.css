@@ -1,0 +1,518 @@
+/* downloaded font applied to all content */
+body {
+    font-family: 'Playfair Display';
+}
+
+/* header and navbar */
+.main-header {
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.main-header a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.column {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: row;
+    flex: 60%;
+    width: 400px;
+    background-color: #f0f0f0;
+}
+
+.right-column {
+    flex: 35%;
+    width: 200px;
+    background-color: #d0d0d0;
+}
+
+.left-content {
+    flex: 1;
+    padding-right: 10px;
+    font-size: 28px;
+    align-content: center;
+    text-align: center;
+}
+
+.right-content {
+    flex-shrink: 0;
+}
+
+.right-content img {
+    flex: 1;
+    width: 100;
+    max-width: 200px;
+    display: block;
+}
+
+.right-column .top-section,
+.right-column .middle-section,
+.right-column .bottom-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px; 
+}
+
+.right-column .top-section img,
+.right-column .middle-section img,
+.right-column .bottom-section img {
+    margin-left: 35%; 
+    width: 120px; 
+    height: 110px; 
+}
+
+.right-column .top-section .text-container,
+.right-column .middle-section .text-container,
+.right-column .bottom-section .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    margin-left: 5%; 
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-column .top-section li,
+.right-column .middle-section li,
+.right-column .bottom-section li {
+    list-style-type: none;
+}
+
+.right-column .top-section li a,
+.right-column .middle-section li a,
+.right-column .bottom-section li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Recipe */
+.recipe-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.recipe-header {
+    display: flex;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.left-content-recipe {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.left-content-recipe img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    display: block;
+}
+
+.right-content-recipe {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.right-content-recipe h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.right-content-recipe p {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.second-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.right-content-second {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.right-content-second h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.right-content-second p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.second-section img {
+    width: 90%; 
+    max-width: 100%; 
+    height: auto;
+    max-height: 300px; 
+    margin-top: 20px; 
+}
+
+.recipe-info {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.recipe-info-header {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+}
+
+.recipe-info-header img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.recipe-info h1 {
+    font-size: 30px;
+}
+
+.recipe-info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.recipe-info ul,
+.recipe-info ol {
+    margin-left: 20px;
+}
+
+.recipe-info ul li,
+.recipe-info ol li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* You Might Also Like Section */
+.recommendations {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.recommendations h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Flexbox container for the recommendations */
+.recommendations-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual recommendation items */
+.recommendation-item {
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.recommendation-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; 
+    max-height: 200px; 
+    margin-bottom: 10px;
+}
+
+.recommendation-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recommendation-item a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Tips and Tricks */
+.tips-and-tricks {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px; 
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+    margin-bottom: 30px; 
+}
+
+.left-content {
+    flex: 1;
+    max-width: 50%; 
+}
+
+.left-content img {
+    width: 100%; 
+    height: auto; 
+    max-width: 400px; 
+}
+
+.right-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.right-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-me {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+/* Flexbox Layout for Image and Text */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.content-wrapper.reverse {
+    flex-direction: row-reverse; 
+}
+
+.left-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.left-content img {
+    width: 100%; 
+    height: auto; 
+    max-width: 400px;
+}
+
+.right-content {
+    flex: 2;
+}
+
+.right-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.right-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Orders */
+.orders {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.order-methods {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.method {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 25px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.method:hover {
+    background-color: #d0d0d0;
+}
+
+/* Best Sellers Section */
+.best-sellers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.item {
+    text-align: center;
+    width: 300px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.item p {
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex: 100%;
+    }
+
+    .navbar {
+        flex: 100%;
+    }
+
+    .recipe-header, 
+    .second-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content-recipe,
+    .right-content-recipe,
+    .left-content-second,
+    .right-content-second {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-content-recipe img,
+    .left-content-second img {
+        max-width: 100%;
+    }
+
+    .recommendations-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .recommendation-item {
+        width: 100%;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .left-content img {
+        max-width: 100%; 
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .left-content img {
+        max-width: 100%; 
+    }
+
+    .right-content h2 {
+        font-size: 24px; 
+    }
+
+    .right-content p {
+        font-size: 16px; 
+    }
+}

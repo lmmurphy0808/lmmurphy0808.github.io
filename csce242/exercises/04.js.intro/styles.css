@@ -127,6 +127,12 @@ main {
 }
 
 /* Navigation */
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:var(--gallery-color);
+    margin:6px 0;
+}
 #sub-nav {
     position:absolute;
     top:0;
