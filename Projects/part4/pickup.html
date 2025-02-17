@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickup Order</title>
+    <link rel="stylesheet" href="orders-styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pickup Order</h1>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="item">Select Item:</label>
+            <select id="item" name="item" required>
+                <option value="cookie">Chocolate Chip Cookie</option>
+                <option value="cupcake">Cupcake</option>
+                <option value="cookie-bar">Cookie Bar</option>
+            </select>
+
+            <label for="time">Pickup Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+        <button onclick="location.href='orders.html'">Back to Orders</button>
+    </div>
+
+</body>
+</html>
