@@ -55,13 +55,11 @@ body {
     flex-direction: row;
     flex: 60%;
     width: 400px;
-    background-color: #f0f0f0;
 }
 
 .right-column {
     flex: 35%;
     width: 200px;
-    background-color: #d0d0d0;
 }
 
 .left-content {
@@ -87,13 +85,12 @@ body {
 .right-column .bottom-section {
     display: flex;
     align-items: center;
-    margin-bottom: 25px; 
+    margin: 0px 0px 100px 0px; 
 }
 
 .right-column .top-section img,
 .right-column .middle-section img,
 .right-column .bottom-section img {
-    margin-left: 35%; 
     width: 120px; 
     height: 110px; 
 }
