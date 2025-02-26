@@ -2,7 +2,6 @@ body {
   background-color: lightsteelblue;
 }
 
-/* Popup Box Styles */
 #popupBox {
     display: none;
     position: fixed;
@@ -37,7 +36,6 @@ body {
     color: #333;
   }
   
-  /* Hidden class to hide the popup initially */
   .hidden {
     display: none;
   }
