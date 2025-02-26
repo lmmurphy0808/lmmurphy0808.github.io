@@ -1,0 +1,76 @@
+body {
+  background-color: lightsteelblue;
+}
+
+/* Popup Box Styles */
+#popupBox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px lightpink;
+    z-index: 9999;
+    width: 300px;
+    text-align: center;
+  }
+  
+  #popupBox img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    margin: 20px 0;
+  }
+  
+  #close {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  
+  #popupBox h2 {
+    color: #333;
+  }
+  
+  /* Hidden class to hide the popup initially */
+  .hidden {
+    display: none;
+  }
+  
+  #imageGallery {
+    margin: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    cursor: pointer;
+    margin: 10px 0;
+    color: darkgray;
+    font-size: 18px;
+  }
+  
+  .title:hover {
+    color: #f56258;
+  }
+  
+  section {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: darkgray;
+  }
+  
+  h1 {
+    text-align: center;
+    color: darkblue;
+  }
+  
+  h2 {
+    text-align: center;
+    color: white;
+  }
+  
