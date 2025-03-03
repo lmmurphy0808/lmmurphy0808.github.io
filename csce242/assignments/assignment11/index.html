@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2 class="w3-center">Assignment 11: Pizza Gallery</h2>
+
+<div class="pizza-container" id="pizza-gallery"></div>
+
+<!-- Modal for Pizza Details -->
+<div id="pizzaModal" class="w3-modal">
+    <div class="w3-modal-content modal-content">
+        <span class="w3-button w3-large w3-hover-opacity w3-display-topright" id="closeModalBtn">&times;</span>
+        
+        <div class="modal-text">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDetails"></p>
+            <p id="modalPrice"></p>
+        </div>
+
+        <img id="modalImage" src="" alt="Pizza Image">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

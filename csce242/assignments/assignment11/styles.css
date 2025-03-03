@@ -1,0 +1,118 @@
+.pizza-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+    background-color: lightskyblue;
+}
+
+.pizza-box {
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.pizza-box:hover {
+    transform: scale(1.05);
+}
+
+.pizza-box img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.pizza-box:hover img {
+    transform: rotate(360deg);
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    color: darkgray;
+}
+
+.pizza-box h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.w3-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.w3-modal-content {
+    background: lightpink;
+    color: white;
+    padding: 20px;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 20px;
+    position: relative;
+}
+
+.modal-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.modal-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.w3-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.w3-button:hover {
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .w3-modal-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    .modal-text {
+        padding-right: 0;
+    }
+
+    .modal-content img {
+        width: 100%;
+        max-width: 250px;
+    }
+}
