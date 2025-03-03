@@ -1,0 +1,164 @@
+/* General Page Styling */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navbar */
+.main-header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+}
+
+/* Cart Button */
+.cart-container {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}
+
+#viewCart {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #c4b7c4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#viewCart:hover {
+    background-color: #a69aa6;
+}
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-left: 15px;
+}
+
+input, select, textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    padding: 12px;
+    background-color: #c4b7c4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a69aa6;
+}
+
+.clear-btn {
+    background-color: #faf1fa;
+}
+
+.clear-btn:hover {
+    background-color: #dfd5db;
+}
+
+/* Order Type Section */
+.order-type {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.order-type button {
+    padding: 12px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #c4b7c4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-type button:hover {
+    background-color: #a69aa6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    font-size: 18px;
+    margin-top: 40px;
+}

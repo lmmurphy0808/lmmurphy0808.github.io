@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Cart - The Baking Haven</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Keeps your original styling -->
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+</head>
+<body>
+    <div class="main-header">
+        <div class="navbar"><li><a href="index.html">The Baking Haven</a></li></div> 
+        <ul class="nav">
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="tipsandtricks.html">Tips and Tricks</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="cart-content">
+            <h1>Your Cart</h1>
+            <div class="cart-items-container">
+                <ul id="cart-items"></ul>
+            </div>
+
+            <div class="cart-buttons">
+                <button onclick="clearCart()">Clear Cart</button>
+                <button onclick="location.href='orders.html'">Back to Orders</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>The Baking Haven</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
