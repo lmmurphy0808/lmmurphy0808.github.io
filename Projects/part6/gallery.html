@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-    <head>
-        <title>The Baking Haven</title>
-        <link rel="stylesheet" href="styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
-    </head>
-    <body>
-        <div class="main-header">
-            <div class="navbar"><li><a href="index.html">The Baking Haven</a></li></div> 
-                <ul class="nav">
-                    <li><a href="recipes.html">Recipes</a></li>
-                    <li><a href="tipsandtricks.html">Tips and Tricks</a></li>
-                    <li><a href="orders.html">Orders</a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
-                </ul>
-            </div>
-            <footer>
-                <p>The Baking Haven</p>
-            </footer>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Baking Haven - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+</head>
+<body>
+    <div class="main-header">
+        <div class="navbar"><li><a href="index.html">The Baking Haven</a></li></div> 
+            <ul class="nav">
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="tipsandtricks.html">Tips and Tricks</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+    </div>
 
-    </body>
+    <main>
+        <div class="gallery">
+            <h1>Cookie Recipes Gallery</h1>
+            <div id="recipes" class="content-wrapper">
+                <!-- Cookie recipes will be dynamically inserted here by json-cookies.js -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>The Baking Haven</p>
+    </footer>
+
+    <script src="projects/part6/json/json-cookies.js"></script>
+</body>
 </html>

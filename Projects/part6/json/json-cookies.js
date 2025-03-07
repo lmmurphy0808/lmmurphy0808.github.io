@@ -1,5 +1,5 @@
 const getCookies = async() => {
-    const url = "https://lmmurphy0808.github.io/json/cookies.js";
+    const url = "https://lmmurphy0808.github.io/projects/part6/json/cookies.js";
 
     try {
         const response = await fetch(url);
@@ -19,10 +19,6 @@ const showCookies = async() => {
         const h3 = document.createElement("h3");
         h3.innerHTML = cookie.name;
         section.append(h3);
-
-        /*const r = document.createElement("r");
-        section.append(r);
-        r.innerHTML = ''*/
 
         const ul = document.createElement("ul");
         section.append(ul);
