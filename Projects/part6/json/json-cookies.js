@@ -1,5 +1,5 @@
 const getCookies = async() => {
-    const url = "https://lmmurphy0808.github.io/projects/part6/json/cookies.js";
+    const url = "https://lmmurphy0808.github.io/Projects/part6/json/cookies.js";
 
     try {
         const response = await fetch(url);
