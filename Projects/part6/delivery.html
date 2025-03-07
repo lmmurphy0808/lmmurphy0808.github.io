@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Order</title>
+    <link rel="stylesheet" href="orders-styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Your Cart Button -->
+    <div class="cart-container">
+        <button id="viewCart" onclick="window.location.href='cart.html'">Your Cart</button>
+    </div>
+
+
+    <div class="container">
+        <h1>Delivery Order</h1>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="item">Select Item:</label>
+            <select id="item" name="item" required>
+                <option value="cookie">Chocolate Chip Cookie</option>
+                <option value="cupcake">Cupcake</option>
+                <option value="cookie-bar">Cookie Bar</option>
+            </select>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+        <button onclick="location.href='orders.html'">Back to Orders</button>
+    </div>
+    <script src="cart.js"></script>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission from refreshing the page
+        addToCart(); // Save order to localStorage
+        window.location.href = "cart.html"; // Redirect to cart page
+        });
+    </script>
+</body>
+</html>
