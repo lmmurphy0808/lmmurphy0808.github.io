@@ -148,6 +148,10 @@ main {
     }
   }
 
+  #map {
+    width:100%;
+  }
+
 /* Playing with positioning */
 #main-logo {
     position:absolute;
