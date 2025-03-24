@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Baking Haven</title>
+  <link rel="stylesheet" href="contact-me.css">
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <div class="main-header">
+    <div class="navbar"><li><a href="index.html">The Baking Haven</a></li></div> 
+    <ul class="nav">
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="tipsandtricks.html">Tips and Tricks</a></li>
+      <li><a href="orders.html">Orders</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact-me.html">Contact Me</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <div class="contact-form-wrapper">
+      <div class="form-card">
+        <div class="text-center">
+          <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+            Contact Us
+          </h1>
+          <p class="text-gray-400 dark:text-gray-400">
+            Fill up the form below to send us a message.
+          </p>
+        </div>
+        <div class="m-7">
+          <form action="https://api.web3forms.com/submit" method="POST" id="form">
+            <input type="hidden" name="access_key" value="2a3fb102-e3df-4b0a-9d36-3db0edcb9ffa" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+            <!-- Full Name -->
+            <div class="mb-6">
+              <label for="name" class="block mb-2 text-sm">Full Name</label>
+              <input type="text" name="name" id="name" placeholder="John Doe" required class="form-input" />
+            </div>
+
+            <!-- Email Address -->
+            <div class="mb-6">
+              <label for="email" class="block mb-2 text-sm">Email Address</label>
+              <input type="email" name="email" id="email" placeholder="you@company.com" required class="form-input" />
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-6">
+              <label for="phone" class="text-sm">Phone Number</label>
+              <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="form-input" />
+            </div>
+
+            <!-- Message -->
+            <div class="mb-6">
+              <label for="message" class="block mb-2 text-sm">Your Message</label>
+              <textarea rows="5" name="message" id="message" placeholder="Your Message" required class="form-input"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <div class="mb-6">
+              <button type="submit" class="submit-button">
+                Send Message
+              </button>
+            </div>
+
+            <p class="text-base text-center text-gray-400" id="result"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>The Baking Haven</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

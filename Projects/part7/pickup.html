@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickup Order</title>
+    <link rel="stylesheet" href="orders-styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Your Cart Button -->
+    <div class="cart-container">
+        <button id="viewCart" onclick="window.location.href='cart.html'">Your Cart</button>
+    </div>
+
+    <div class="container">
+
+        <!-- Location Header and Map -->
+        <h2>Where we are located!</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8106.732352521537!2d-81.02247632372368!3d33.98824192110603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bac4d221c617%3A0xdc9197ae38bade5d!2s1606%20Heyward%20St%2C%20Columbia%2C%20SC%2029205!5e1!3m2!1sen!2sus!4v1742780614522!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <h1>Pickup Order</h1>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="item">Select Item:</label>
+            <select id="item" name="item" required>
+                <option value="cookie">Chocolate Chip Cookie</option>
+                <option value="cupcake">Cupcake</option>
+                <option value="cookie-bar">Cookie Bar</option>
+            </select>
+
+            <label for="time">Pickup Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+        <button onclick="location.href='orders.html'">Back to Orders</button>
+    </div>
+
+    <footer>
+        <p>The Baking Haven</p>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission from refreshing the page
+        addToCart(); // Save order to localStorage
+        window.location.href = "cart.html"; // Redirect to cart page
+        });
+    </script>
+</body>
+</html>

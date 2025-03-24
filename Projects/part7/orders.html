@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Baking Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+</head>
+<body>
+    <div class="main-header">
+        <div class="navbar"><li><a href="index.html">The Baking Haven</a></li></div> 
+        <ul class="nav">
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="tipsandtricks.html">Tips and Tricks</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact-me.html">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <!-- Your Cart Button -->
+    <div class="cart-container">
+        <button id="viewCart" onclick="window.location.href='cart.html'">Your Cart</button>
+    </div>
+
+    <main>
+        <div class="orders">
+            <h1>Welcome to the ordering page! We offer two methods of ordering:</h1>
+            <div class="order-methods">
+                <div class="method">
+                    <li><a href="delivery.html">Delivery</a></li>
+                </div>
+                <div class="method">
+                    <li><a href="pickup.html">Pickup</a></li>
+                </div>
+            </div>
+
+            <h2>Best Sellers:</h2>
+            <div class="best-sellers">
+                <div class="item">
+                    <img src="images/cookiebatch.jpg" alt="Best Seller Image">
+                    <p>The best-selling chocolate chip cookie recipe is beloved for its perfect balance of a crispy edge and a soft, chewy center...</p>
+                </div>
+                <div class="item">
+                    <img src="images/cupcakebatch.jpg" alt="Best Seller Image">
+                    <p>The best-selling cupcake recipe is a crowd-pleaser, known for its moist, fluffy texture and rich, flavorful taste...</p>
+                </div>
+                <div class="item">
+                    <img src="images/barsbatch.jpg" alt="Best Seller Image">
+                    <p>The best-selling cookie bar recipe is a favorite for its perfect combination of chewy, gooey texture and rich flavor...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>The Baking Haven</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
